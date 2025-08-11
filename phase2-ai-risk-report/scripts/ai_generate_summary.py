@@ -1,0 +1,1 @@
+﻿# stub: LLM summary generator
