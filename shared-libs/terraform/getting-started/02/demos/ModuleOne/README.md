@@ -86,21 +86,8 @@ terraform destroy -auto-approve
 
 ---
 
-## Troubleshooting
 
-- **`InvalidKeyPair.NotFound`**  
-  You referenced a `key_name` that doesn’t exist in the target region. Either remove `key_name` or create/import that key (same name, same region).
 
-- **Plan shows only the security group**  
-  You’re missing `main.tf` or `ami.tf` in this exact directory. Terraform loads files **only** from the working directory.
-
-- **AMI not found**  
-  The AL2023 filter in `ami.tf` expects x86_64. If you switch to ARM, update the filter to `al2023-ami-*-arm64` **and** pick a Graviton instance type (e.g., `t4g.micro`).
-
-- **NGINX doesn’t load yet**  
-  Give it 30–60 seconds for `user_data` to finish and the service to start, then retry the `public_dns` URL.
-
----
 
 ## Git hygiene
 
