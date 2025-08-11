@@ -1,0 +1,29 @@
+﻿# General
+.DS_Store
+Thumbs.db
+*.log
+.env
+.venv/
+__pycache__/
+*.pyc
+
+# Node / Docker
+node_modules/
+dist/
+*.tar
+*.img
+
+# Python
+*.egg-info/
+.mypy_cache/
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+crash.log
+override.tf
+override.tf.json
+*.override.tf
+*.override.tf.json
+.terraform.lock.hcl
